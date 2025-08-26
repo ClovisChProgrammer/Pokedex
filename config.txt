@@ -1,0 +1,9 @@
+-- Configuração do GIT
+git config --global user.name ClovisProgrammer
+git config --global user.email clovis.programmer@gmail.com
+
+-- Abrir o Terminal - Ctrl + ' 
+dotnet new gitignore
+dotnet new mvc -o Pokedex
+cd Pokedex
+
