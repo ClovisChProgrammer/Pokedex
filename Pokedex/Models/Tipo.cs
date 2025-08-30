@@ -16,5 +16,7 @@ public class Tipo
 
     [StringLength(25)]
     public string Cor { get; set; }
+
+    public ICollection<PokemonTipo> Pokemons { get; set; }
 }
 
