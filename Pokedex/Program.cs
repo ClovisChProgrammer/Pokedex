@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Pokedex.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 

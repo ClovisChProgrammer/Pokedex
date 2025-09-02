@@ -1,11 +1,15 @@
 -- Configuração do GIT
 git config --global user.name ClovisProgrammer
-git config --global user.email clovis.programmer@gmail.com
+git config --global user.email clovisch.programmer@gmail.com
 
 -- Abrir o Terminal - Ctrl + ' 
 dotnet new gitignore
 dotnet new mvc -o Pokedex
+
+
+
 cd Pokedex
+dotnet watch run
 
 dotnet add package Microsoft.EntityFrameworkCore --version 9.0.8
 dotnet add package Pomelo.EntityFrameworkCore.MySql --version 9.0.0
