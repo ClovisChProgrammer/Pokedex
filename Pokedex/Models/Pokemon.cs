@@ -14,22 +14,24 @@ public class Pokemon
     [ForeignKey("RegiaoId")]
     public Regiao Regiao { get; set; }
 
-    [Required(ErrorMessage = "Por favor, informe o Gênero")]
+    [Required(ErrorMessage = "Por favor, informe o Genêro")]
     public uint GeneroId { get; set; }
     [ForeignKey("GeneroId")]
     public Genero Genero { get; set; }
+
     [StringLength(30)]
     [Required(ErrorMessage = "Por favor, informe o nome")]
     public string Nome { get; set; }
 
     [StringLength(1000)]
     public string Descricao { get; set; }
-    [Column(TypeName = " double(5,2)")]
+
+    [Column(TypeName = "double(5,2)")]
     [Required(ErrorMessage = "Por favor, informe a altura")]
     public double Altura { get; set; }
 
     [Column(TypeName = "double(7,3)")]
-    [Required(ErrorMessage = "Por favor informe o peso")]
+    [Required(ErrorMessage = "Por favor, informe o peso")]
     public double Peso { get; set; }
 
     [StringLength(200)]
